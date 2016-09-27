@@ -1,19 +1,28 @@
 ## ***Pokemon***
+Pokemon standard now includes moveset and IVs as of commit [oc1b4](https://github.com/kvangent/PokeAlarm/commit/0c1b4cce80e0ceb3cc6dbb2d802204af4dd3ce60).
 #### Example:
 ```json
-{
-	"type": "pokemon",
-    "message": {
-		"encounter_id": 0,
-		"spawnpoint_id": 0,
-		"pokemon_id": 1,
-		"latitude": 62.790967,
-		"longitude": 76.927920,
-		"disappear_time": 1470592235,
-		"last_modified_time": 1286668800,
-		"time_until_hidden_ms": 5000
-	}
-}
+ {
+            "disappear_time": 1475007853000,
+            "encounter_id": "0",
+            "individual_attack": 12,
+            "individual_defense": 2,
+            "individual_stamina": 0,
+            "latitude": 43.5413135248117,
+            "longitude": -102.418983882988,
+            "move_1": 205,
+            "move_2": 78,
+            "pokemon_id": 25,
+            "pokemon_name": "Pikachu",
+            "pokemon_rarity": "Uncommon",
+            "pokemon_types": [
+                {
+                    "color": "#f8d030",
+                    "type": "Electric"
+                }
+            ],
+            "spawnpoint_id": "0"
+        }
 ```
 
 ## Pokestops
