@@ -2,28 +2,26 @@
 Pokemon standard now includes moveset and IVs as of commit [oc1b4](https://github.com/kvangent/PokeAlarm/commit/0c1b4cce80e0ceb3cc6dbb2d802204af4dd3ce60).
 #### Example:
 ```json
- {
-            "disappear_time": 1475007853000,
-            "encounter_id": "0",
-            "individual_attack": 12,
-            "individual_defense": 2,
-            "individual_stamina": 0,
-            "latitude": 43.5413135248117,
-            "longitude": -102.418983882988,
-            "move_1": 205,
-            "move_2": 78,
-            "pokemon_id": 25,
-            "pokemon_name": "Pikachu",
-            "pokemon_rarity": "Uncommon",
-            "pokemon_types": [
-                {
-                    "color": "#f8d030",
-                    "type": "Electric"
-                }
-            ],
-            "spawnpoint_id": "0"
-        }
+{
+	"type": "pokemon"
+	"message":{
+		"move_1": 221,
+		"move_2": 118,
+		"disappear_time": 1375014270,
+		"pokemon_id": 1,
+		"individual_stamina": 15,
+		"spawnpoint_id": "0",
+		"individual_defense": 2,
+		"longitude": -45.10312534490142,
+		"time_until_hidden_ms": 884287,
+		"latitude": 40.677737099053275,
+		"last_modified_time": 1475033386661L,
+		"individual_attack": 5,
+		"encounter_id": "0"
+	},
+}
 ```
+
 
 ## Pokestops
 #### Example:
@@ -48,14 +46,14 @@ Pokemon standard now includes moveset and IVs as of commit [oc1b4](https://githu
 { 
     "type": "gyms",
     "message": {
-	"gym_id": 0,
-	"team_id": 0,
-	"guard_pokemon_id": 0,
-	"gym_points": 100,
-	"enabled": "True",
-	"latitude": 62.790967,
-     "longitude":  76.927920,
-	"last_modified": 1572241600
+		"gym_id": 0,
+		"team_id": 0,
+		"guard_pokemon_id": 0,
+		"gym_points": 100,
+		"enabled": "True",
+		"latitude": 62.790967,
+		"longitude":  76.927920,
+		"last_modified": 1572241600
     }
 }
 ```
