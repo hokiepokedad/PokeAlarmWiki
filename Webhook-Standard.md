@@ -3,7 +3,7 @@ Pokemon standard now includes moveset and IVs as of commit [oc1b4](https://githu
 #### Example:
 ```json
 {
-	"type": "pokemon"
+	"type": "pokemon",
 	"message": {
 		"move_1": 221,
 		"move_2": 118,
@@ -18,7 +18,7 @@ Pokemon standard now includes moveset and IVs as of commit [oc1b4](https://githu
 		"last_modified_time": 1475033386661,
 		"individual_attack": 5,
 		"encounter_id": "0"
-	},
+	}
 }
 ```
 
