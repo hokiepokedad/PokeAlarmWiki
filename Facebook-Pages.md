@@ -124,7 +124,7 @@ Following [these instructions](https://developers.facebook.com/docs/facebook-log
 
 `https://graph.facebook.com/v2.2/oauth/access_token?grant_type=fb_exchange_token&client_id={app_id}&client_secret={app_secret}&fb_exchange_token={short_lived_token}`
 
-entering in your app's ID and secret and the short-lived token generated in the previous step.
+entering in your app's ID and secret, generated from step 0, and the short-lived token, generated in the previous step.
 
 You **cannot use the Graph API Explorer**. For some reason it gets stuck on this request. I think it's because the response isn't JSON, but a query string. Since it's a GET request, you can just go to the URL in your browser.
 
