@@ -122,7 +122,7 @@ Token that appears in the "Access Token" field is your short-lived access token.
 
 Following [these instructions](https://developers.facebook.com/docs/facebook-login/access-tokens#extending) from the Facebook docs, make a GET request to
 
-https://graph.facebook.com/v2.2/oauth/access_token?grant_type=fb_exchange_token&client_id=**{app_id}**&client_secret=**{app_secret}**&fb_exchange_token=**{short_lived_token}**
+`https://graph.facebook.com/v2.2/oauth/access_token?grant_type=fb_exchange_token&client_id={app_id}&client_secret={app_secret}&fb_exchange_token={short_lived_token}`
 
 entering in your app's ID and secret and the short-lived token generated in the previous step.
 
@@ -130,7 +130,7 @@ You **cannot use the Graph API Explorer**. For some reason it gets stuck on this
 
 The response should look like this:
 
-access_token=**ABC123**&expires=5182959
+`access_token=ABC123&expires=5182959`
 
 "ABC123" will be your long-lived access token. You can put it into the [Access Token Debugger](https://developers.facebook.com/tools/debug/accesstoken) to verify. Under "Expires" it should have something like "2 months".
 
@@ -138,7 +138,7 @@ access_token=**ABC123**&expires=5182959
 
 Using the long-lived access token, make a GET request to
 
-https://graph.facebook.com/v2.2/me?access_token=**{long_lived_access_token}**
+`https://graph.facebook.com/v2.2/me?access_token={long_lived_access_token}`
 
 The **id** field is your account ID. You'll need it for the next step.
 
@@ -146,7 +146,7 @@ The **id** field is your account ID. You'll need it for the next step.
 
 Make a GET request to
 
-https://graph.facebook.com/v2.2/**{account_id}**/accounts?access_token=**{long_lived_access_token}**
+`https://graph.facebook.com/v2.2/{account_id}/accounts?access_token={long_lived_access_token}`
 
 The JSON response should have a **data** field under which is an array of items the user has access to. Find the item for the page you want the permanent access token from. The **access_token** field should have your permanent access token. Copy it and test it in the [Access Token Debugger](https://developers.facebook.com/tools/debug/accesstoken). Under "Expires" it should say "Never".
 
