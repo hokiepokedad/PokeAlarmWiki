@@ -26,8 +26,6 @@ PokeAlarm offers the following for Facebook Pages:
 
 * Personalized notifications via [Dynamic Text Substitution](Dynamic-Text-Subsitution.md)
 
-
-
 ## Basic Config
 
 ### Required Parameters
@@ -50,7 +48,6 @@ These `alarms.json` parameters - `active`, `type`, and `page_access_token` - are
 **Note:** The above code is to be inserted into the alarms section of alarms.json. It does not represent the entire alarms.json file.
 
 ## Advanced Config
-## Advanced Config
 
 ### Optional Parameters
 In addition to the 3 required parameters, several optional parameters are available to personalize your Facebook Pages notifications.  Below is an example of these optional parameters and how they are incorporated into a functional alarm layout for Facebook Pages.
@@ -68,6 +65,7 @@ These optional parameters below are applicable to the `pokemon`, `pokestop`, and
 | -----------------|---------------------------------------------------|-----------------------------------------------|
 | `message`        | Message to post as status message                 | `A wild <pkmn> has appeared! Available until <24h_time> (<time_left>).`                                      | 
 | `link`           | Link to be added to notification text   		   | `<gmaps>`                                     |
+
 *Note: Nidorans will be `nidoranf` or `nidoranm`, Farfetch'd will be `farfetchd`, and Mr. Mime will be `mrmime`.
 
 ## Example: Alarm Configuration Using Optional Parameters
@@ -112,7 +110,7 @@ Use the [Graph API Explorer](https://developers.facebook.com/tools/explorer) for
 1. Go to the [Graph API Explorer](https://developers.facebook.com/tools/explorer).
 2. Select the application you want to get the access token for by clicking on the "Graph API Explorer" dropdown near the top right.
 3. Click "Get Token" dropdown and choose "Get User Access Token".
-4. In the pop-up, under the "Events, Groups & Pages" section, check "manage_pages".
+4. In the pop-up, under the "Events, Groups & Pages" section, check "manage_pages" and "publish_pages".
 5. Click "Get Access Token".
 6. Grant access from a Facebook account that has access to manage the target page. Note that if this user loses access the final, never-expiring access token will likely stop working.
 
