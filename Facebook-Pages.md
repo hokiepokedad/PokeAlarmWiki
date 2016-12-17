@@ -110,7 +110,7 @@ Use the [Graph API Explorer](https://developers.facebook.com/tools/explorer) for
 ### 1. Get User Short-Lived Access Token
 
 1. Go to the [Graph API Explorer](https://developers.facebook.com/tools/explorer).
-2. Select the application you want to get the access token for.
+2. Select the application you want to get the access token for by clicking on the "Graph API Explorer" dropdown near the top right.
 3. Click "Get Token" dropdown and choose "Get User Access Token".
 4. In the pop-up, under the "Events, Groups & Pages" section, check "manage_pages".
 5. Click "Get Access Token".
@@ -124,7 +124,7 @@ Following [these instructions](https://developers.facebook.com/docs/facebook-log
 
 `https://graph.facebook.com/v2.2/oauth/access_token?grant_type=fb_exchange_token&client_id={app_id}&client_secret={app_secret}&fb_exchange_token={short_lived_token}`
 
-entering in your app's ID and secret, generated from step 0, and the short-lived token, generated in the previous step.
+entering in your app's ID and secret, generated from step 0, and the short-lived token, generated in the previous step. Be sure to remove the curly braces "{}" when replacing values.
 
 You **cannot use the Graph API Explorer**. For some reason it gets stuck on this request. I think it's because the response isn't JSON, but a query string. Since it's a GET request, you can just go to the URL in your browser.
 
@@ -140,7 +140,7 @@ Using the long-lived access token, make a GET request to
 
 `https://graph.facebook.com/v2.2/me?access_token={long_lived_access_token}`
 
-The **id** field is your account ID. You'll need it for the next step.
+Be sure to remove the curly braces "{}" when replacing values. The **id** field is your account ID. You'll need it for the next step.
 
 ### 5. Get Permanent Page Access Token
 
@@ -148,5 +148,5 @@ Make a GET request to
 
 `https://graph.facebook.com/v2.2/{account_id}/accounts?access_token={long_lived_access_token}`
 
-The JSON response should have a **data** field under which is an array of items the user has access to. Find the item for the page you want the permanent access token from. The **access_token** field should have your permanent access token. Copy it and test it in the [Access Token Debugger](https://developers.facebook.com/tools/debug/accesstoken). Under "Expires" it should say "Never".
+Be sure to remove the curly braces "{}" when replacing values. The JSON response should have a **data** field under which is an array of items the user has access to. Find the item for the page you want the permanent access token from. The **access_token** field should have your permanent access token. Copy it and test it in the [Access Token Debugger](https://developers.facebook.com/tools/debug/accesstoken). Under "Expires" it should say "Never".
 
