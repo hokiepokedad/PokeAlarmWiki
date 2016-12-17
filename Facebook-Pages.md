@@ -104,6 +104,7 @@ Use the [Graph API Explorer](https://developers.facebook.com/tools/explorer) for
 1. Go to [My Apps](https://developers.facebook.com/apps/).
 2. Click "+ Add a New App".
 3. Setup a website app.
+4. Go to App Review of your new app and make sure your app is made Public.
 
 ### 1. Get User Short-Lived Access Token
 
